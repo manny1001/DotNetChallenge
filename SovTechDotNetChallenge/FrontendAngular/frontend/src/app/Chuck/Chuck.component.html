@@ -1,0 +1,16 @@
+<div class="container">
+  <div>
+    <div class="card" style="margin-left: 10%; margin-right: 10%">
+      <div
+        *ngFor="let c of categories"
+        (click)="openDialog(c)"
+        class="card-body"
+        style="margin: 20px; border: 5px solid; padding: 20px"
+      >
+        <h5 style="cursor: pointer" class="card-title">
+          {{ c }}
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="container col-12" style="padding-left: 5%; padding-right: 5%">
+  <div class="input-group form-outline row">
+    <input
+      placeholder="search Chuck Norris or SWAPI API..."
+      (change)="search($event.target.value)"
+      type="search"
+      id="form1"
+      class="form-control"
+    />
+    <button type="button" class="btn btn-primary">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+  <div class="col-12 row">
+    <div class="col-md-6">
+      <h5 style="padding: 10%">Swapi API Search Results</h5>
+      <div *ngFor="let c of People">{{ c }}</div>
+    </div>
+    <div class="col-md-6">
+      <h5 style="padding: 10%">Chuck API Norris Search Results</h5>
+      <div *ngFor="let c of Jokes">{{ c }}</div>
+    </div>
+  </div>
+</div>
